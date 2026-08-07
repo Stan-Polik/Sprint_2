@@ -9,13 +9,13 @@ class Comedy(Movies):
     def __init__(self,movies = []):
         super().__init__(movies)
     def add_movie(self,movies):
-        self.movies.append(movies)
+        super().add_movie(movies)
         return f"Комедии:  {movies}"
 class Drama(Movies):
     def __init__(self,movies = []):
         super().__init__(movies)
     def add_movie(self,movies):
-        self.movies.append(movies)
+        super().add_movie(movies)
         return f"Драмы:  {movies}"
 
 comedy = Comedy()
